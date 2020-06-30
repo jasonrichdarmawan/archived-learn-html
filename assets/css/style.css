@@ -57,6 +57,75 @@
     color: white;
 }
 
+/* TO DO */
+
+.main2 {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}.main2 .container {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+}.main2 .container:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.ul {
+    list-style-type: none;
+    padding: 0;
+}.ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}.ul li:last-child {
+    border-bottom: none;
+}.ul a {
+    text-decoration: none;
+    color: black
+}
+
+.hoverable li:hover {
+    background-color: #ccc;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    text-align: left;
+    /* bug border-bottom */
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+    background-color: #ddd;
+}
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/* value in class panel is hidden by default. see var panel in assets/js/app.js */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
 /* untuk smartphone */
 [class*="col-"] {
     width: 100%;
@@ -92,6 +161,20 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+    
+    /* for laptop, by default, .accordion{max-height: 100%;} */
+    .accordion:hover {
+        cursor: default;
+    }
+    .accordion:after {
+        content: '';
+    }
+    .active:after {
+        content: '';
+    }
+    .panel {
+        max-height: 100%;
+    }
 }
 
 /* TO DO */
