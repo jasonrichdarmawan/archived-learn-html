@@ -6,11 +6,11 @@
 
 <!DOCTYPE html>
 <html>
-
     <head>
-        <title>lorem ipsum</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>InCov</title>
         <script src="assets/js/app.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
     </head>
 
@@ -24,8 +24,26 @@
         referensi: w3schools.com
         -->
         <header>
-            <p>tes1</p>
-            <a href="#1">Covid-19</a>
+            <div class="container">
+                <div class="header-logo">
+                    <h1>InCov</h1>
+                </div>
+                <div class="header-menu">
+                    <a href="#">Beranda</a>
+                    <a href="#">Gejala</a>
+                    <a href="#">Pencegahan</a>
+                    <a href="#">Jenis Pasien</a>
+                </div>
+                <a href="javascript:void(0);" onclick="mobileMenuFunction()">
+                    <i class="fa fa-bars menu-icon"></i>
+                </a>
+                <div id="mobile-menu" onclick="hideMenuFunction()">
+                    <a href="#">Beranda</a>
+                    <a href="#">Gejala</a>
+                    <a href="#">Pencegahan</a>
+                    <a href="#">Jenis Pasien</a>
+                </div>
+            </div>
         </header>
 
         <!--
@@ -33,9 +51,10 @@
         1. <div id="1"></div>
         definisi COVID-19
         -->
-        <div class="main1">
+        <div id="top-wrapper">
             <div class="container">
                 <p>tes2</p>
+                <a href="#1">Covid-19</a>
             </div>
         </div>
 
