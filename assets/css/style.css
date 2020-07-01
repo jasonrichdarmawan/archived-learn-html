@@ -57,8 +57,6 @@
     color: white;
 }
 
-/* TO DO */
-
 .main2 {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -126,6 +124,24 @@
     transition: max-height 0.2s ease-out;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-container > div {
+    /* 25% of 1170; known bug with width: 25% */
+    width: 292px;
+    border-bottom: 1px solid #ddd;
+} .flex-container > div * {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 8px 16px;
+} .flex-container > div:last-child {
+    border-bottom: none;
+}
+
 /* untuk smartphone */
 [class*="col-"] {
     width: 100%;
@@ -175,17 +191,10 @@
     .panel {
         max-height: 100%;
     }
+
+    .flex-container > div {
+        border-bottom: none;
+    }
 }
 
 /* TO DO */
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: blue;
-}
-
-.flex-container > div {
-    width: 100px;
-    margin: 10px;
-    background-color: red;
-}
