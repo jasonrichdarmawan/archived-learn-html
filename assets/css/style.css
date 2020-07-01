@@ -37,7 +37,7 @@ header {
 
 .header-menu a {
     line-height: 65px;
-    color: #F7FFF7;
+    color: white;
     padding: 0 25px;
     display: block;
     float: left;
@@ -50,7 +50,7 @@ header {
 
 .header-logo h1 {
     line-height: 65px;
-    color: #F7FFF7;
+    color: white;
 }
 
 .menu-icon {
@@ -81,7 +81,7 @@ header {
     display: block;
     padding: 0 25px;
     line-height: 65px;
-    color: #F7FFF7;
+    color: white;
     transition: all 0.3s;
 }
 
@@ -154,8 +154,10 @@ header {
     list-style-type: none;
     padding: 0;
 }.ul li {
-    padding: 8px 16px;
+    font-size: 18px;
+    padding: 24px 16px;
     border-bottom: 1px solid #ddd;
+    color: #3f3844;
 }.ul li:last-child {
     border-bottom: none;
 }.ul a {
@@ -169,7 +171,7 @@ header {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
+    background-color: #4ECDC4;
     cursor: pointer;
     padding: 16px;
     width: 100%;
@@ -179,19 +181,20 @@ header {
     border-bottom: 1px solid #ddd;
     outline: none;
     transition: 0.4s;
+    color: white;
 }
 .active, .accordion:hover {
-    background-color: #ddd;
+    background-color: #4ECDC4;
 }
 .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    font-size: 32px;
+    color: white;
     float: right;
     margin-left: 5px;
 }
 .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
 }
 /* value in class panel is hidden by default. see var panel in assets/js/app.js */
 .panel {
@@ -208,14 +211,16 @@ header {
     justify-content: center;
 }
 
-.flex-container > div {
-    /* 25% of 1170; known bug with width: 25% */
-    width: 292px;
-    border-bottom: 1px solid #ddd;
-} .flex-container > div * {
+.flex-container > div * {
     text-align: justify;
     text-justify: inter-word;
     padding: 8px 16px;
+    color: #3f3844;
+} .flex-container > div {
+    /* 25% of 1170; known bug with width: 25% */
+    width: 292px;
+    border-bottom: 1px solid #ddd;
+    padding: 24px 16px;
 } .flex-container > div:last-child {
     border-bottom: none;
 }
