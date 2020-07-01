@@ -67,7 +67,64 @@
         referensi: http://infocovid19.jatimprov.go.id/
         -->
         <div class="main2">
-            <p>tes3</p>
+            <!-- fix break because of released class .container changed from the master branch -->
+            <div class="container" style="padding: 8px 16px">
+                <button class="accordion">
+                    <h1 class="center">Cara Cegah Penyebaran Virus Corona</h1>
+                </button>
+                <div class="panel">
+                    <ul class="ul hoverable">
+                        <!-- bug :last-child -->
+                        <a href="#gejala"><li style="border-bottom: 1px solid #ddd;">Jangan panik, kenali gejalanya untuk deteksi virus corona sejak dini</li></a>
+                        <li>Hanya perlu mengatur jarak, hindari bersalaman dan bila sakit wajib pakai masker</li>
+                        <li>Jaga kebersihan</li>
+                    </ul>
+                </div>
+
+                <button class="accordion">
+                    <h1 class="center">Kenali Gejala Virus Corona</h1>
+                </button>
+                <div class="panel">
+                    <div class="flex-container">
+                        <div>
+                            <img src="assets/images/png/demam.png">
+                            <h1>Demam</h1>
+                            <p>Demam menunjukkan gejala awal corona, demam biasanya mencapai suhu 38 derajat celcius keatas</p>
+                        </div>
+                        <div>
+                            <img src="assets/images/png/batuk.png">
+                            <h1>Batuk Kering</h1>
+                            <p>Infeksi COVID-19 akan melalui jalur pernafasan sehingga dapat mengakibatkan radang pada tenggorokan dan rasa nyeri</p>
+                        </div>
+                        <div>
+                            <img src="assets/images/png/sakittenggorokan.png">
+                            <h1>Leher Sakit</h1>
+                            <p>Infeksi COVID-19 akan melalui jalur pernafasan sehingga dapat mengakibatkan radang pada tenggorokan dan rasa nyeri</p>
+                        </div>
+                        <div>
+                            <img src="assets/images/png/pusing.png">
+                            <h1>Sakit Kepala</h1>
+                            <p>Dengan adanya demam yang tinggi, COVID-19 seringkali diikuti dengan gejala sakit kepala</p>
+                        </div>
+                        <div>
+                            <img src="assets/images/png/lelah.png">
+                            <h1>Lemas</h1>
+                            <p>Infeksi COVID-19 yang telah menyebar ke seluruh tubuh akan menghabiskan energi yang banyak sehingga seringkali dapat mengakibatkan lemas</p>
+                        </div>
+                        <div>
+                            <img src="assets/images/png/batuk.png">
+                            <h1>Sesak Nafas</h1>
+                            <p>Apabila COVID-19 berkembang dengan cepat dan besar di paru-paru, fungsi paru akan menurun sehingga terjadi sesak nafas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
         </div>
 
         <!--
@@ -101,6 +158,7 @@
             <p>tesfooter</p>
         </footer>
 
+        <script src="assets/js/app.js"></script>
     </body>
 
 </html>

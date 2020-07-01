@@ -37,7 +37,7 @@ header {
 
 .header-menu a {
     line-height: 65px;
-    color: #F7FFF7;
+    color: white;
     padding: 0 25px;
     display: block;
     float: left;
@@ -50,7 +50,7 @@ header {
 
 .header-logo h1 {
     line-height: 65px;
-    color: #F7FFF7;
+    color: white;
 }
 
 .menu-icon {
@@ -81,7 +81,7 @@ header {
     display: block;
     padding: 0 25px;
     line-height: 65px;
-    color: #F7FFF7;
+    color: white;
     transition: all 0.3s;
 }
 
@@ -135,6 +135,96 @@ header {
     color: white;
 }
 
+.main2 {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}.main2 .container {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+}.main2 .container:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.ul {
+    list-style-type: none;
+    padding: 0;
+}.ul li {
+    font-size: 18px;
+    padding: 24px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #3f3844;
+}.ul li:last-child {
+    border-bottom: none;
+}.ul a {
+    text-decoration: none;
+    color: black
+}
+
+.hoverable li:hover {
+    background-color: #ccc;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #4ECDC4;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    text-align: left;
+    /* bug border-bottom */
+    border: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    transition: 0.4s;
+    color: white;
+}
+.active, .accordion:hover {
+    background-color: #4ECDC4;
+}
+.accordion:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    font-size: 32px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
+}
+/* value in class panel is hidden by default. see var panel in assets/js/app.js */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-container > div * {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 8px 16px;
+    color: #3f3844;
+} .flex-container > div {
+    /* 25% of 1170; known bug with width: 25% */
+    width: 292px;
+    border-bottom: 1px solid #ddd;
+    padding: 24px 16px;
+} .flex-container > div:last-child {
+    border-bottom: none;
+}
+
 /* untuk smartphone */
 [class*="col-"] {
     width: 100%;
@@ -170,19 +260,24 @@ header {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
-}
+    
+    /* for laptop, by default, .accordion{max-height: 100%;} */
+    .accordion:hover {
+        cursor: default;
+    }
+    .accordion:after {
+        content: '';
+    }
+    .active:after {
+        content: '';
+    }
+    .panel {
+        max-height: 100%;
+    }
 
-/* TO DO */
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: blue;
-}
-
-.flex-container > div {
-    width: 100px;
-    margin: 10px;
-    background-color: red;
+    .flex-container > div {
+        border-bottom: none;
+    }
 }
 
 /* Responsive */
