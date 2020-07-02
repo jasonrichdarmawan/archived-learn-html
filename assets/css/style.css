@@ -269,6 +269,72 @@ header {
 [class*="col-"] {
     width: 100%;
 }
+.footer {
+    background-color: #FFE66D;
+    background-size: cover;
+    padding :30px 40px;
+}
+.footer-logo {
+    color: #0e2d31;
+    font-size: 60px;
+    float: right;
+    padding-right: 100px;
+}
+
+.footer-list {
+    color: #1a535c;
+    font-size: 25px;
+}
+.footer-list li{
+    list-style: none;
+    padding-right: 60px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.Beranda {
+    float: left;
+
+}
+.Gejala {
+    float: left;
+}
+.Pencegahan {
+    float: left;
+}
+.call-center{
+    text-align: right;
+    font-size: 22px;
+    padding-top: 30px;
+    margin-top : 20px;
+    padding-right: 70px;
+    padding-bottom: 10px;
+    color:#0e2d31;
+    
+}
+.copyright{
+    font-size: 13px;
+    color: #0e2d31;
+    opacity: 0.8;
+    padding-left: 30px;
+    border-top: 1px solid rgba(14,45,49,0.8);
+    margin-top: 10px;
+}
+.copyright span {
+    border-left: 1px solid rgba(14,45,49,0.8);
+    padding-left: 10px;
+    margin-left: 10px;
+}
+.flex-container {
+    display: flex;
+    flex-direction : column;
+    padding-top: 30px;
+}
+.flex-container {
+    display: flex;
+    flex-direction : column;
+    flex-wrap: wrap;
+    padding-top: 45px;
+}
 
 @media only screen and (min-width: 600px) {
     /* untuk tablet */
@@ -323,7 +389,22 @@ header {
 /* Responsive */
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
-  
+  .footer-logo {
+        padding-right: 50px;
+    }
+    .footer-list li{
+        font-size: 18px;
+        list-style: none;
+        padding-top: 20px;
+        padding-right: 60px;
+        padding-left: 20px;
+        cursor: pointer;
+        float : none;
+    }
+    .call-center {
+        padding-right : 40px;
+        padding-top : 0;
+    }
 }
 
 /* Untuk Smartphone */
@@ -343,5 +424,8 @@ header {
     }
     #mobile-menu a{
         display: none;
+    }
+     .call-center {
+        font-size: 18px;
     }
 }
