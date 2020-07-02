@@ -30,18 +30,18 @@
                 </div>
                 <div class="header-menu">
                     <a href="#">Beranda</a>
-                    <a href="#">Gejala</a>
+                    <a href="#gejala">Gejala</a>
                     <a href="#">Pencegahan</a>
-                    <a href="#">Jenis Pasien</a>
+                    <a href="#jenis-pasien">Jenis Pasien</a>
                 </div>
                 <a href="javascript:void(0);" onclick="mobileMenuFunction()">
                     <i class="fa fa-bars menu-icon"></i>
                 </a>
                 <div id="mobile-menu" onclick="hideMenuFunction()">
                     <a href="#">Beranda</a>
-                    <a href="#">Gejala</a>
+                    <a href="#gejala">Gejala</a>
                     <a href="#">Pencegahan</a>
-                    <a href="#">Jenis Pasien</a>
+                    <a href="#jenis-pasien">Jenis Pasien</a>
                 </div>
             </div>
         </header>
@@ -82,7 +82,7 @@
                 </div>
 
                 <button class="accordion">
-                    <h1 class="center">Kenali Gejala Virus Corona</h1>
+                    <h1 id="gejala" class="center">Kenali Gejala Virus Corona</h1>
                 </button>
                 <div class="panel">
                     <div class="flex-container">
@@ -120,13 +120,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="flex-container">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-        </div>
-
         <!--
         spesifikasi: 
         1. <div id="3"></div>
@@ -136,12 +129,36 @@
         Pasien dan Jenisnya
         referensi: http://infocovid19.jatimprov.go.id/
         -->
-        <div class="main3">
+        <div id="jenis-pasien" class="main3">
             <div class="container">
+                <h2 class="text">PASIEN DAN JENISNYA</h2>
+                <p class="text">Terdapat kata-kata khusus dalam penyebutan pasien terjangkit </p>
+                <p class="text">wabah atau diduga terkena wabah yaitu ODP, PDP,  dan Confirm.</p>
                 <div class="flex-container">
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
+                    <div class="image-color">
+                        <img src="assets/images/png/odp.png">
+                        <p>Orang Dalam Pemantauan</p>
+                    </div>
+                    <div class="image-color">
+                        <img src="assets/images/png/pdp.png">
+                        <p>Pasien Dalam Pengawasan</p>
+                    </div>
+                    <div class="image-color">
+                        <img src="assets/images/png/positif.png">
+                        <p>Pasien Mengidap Corona</p>
+                    </div>
+                </div>
+                <div class="description">
+                    <h2>ODP</h2>
+                    <p>ODP adalah singkatan dari Orang Dalam Pemantauan. Seseorang yang mengalami demam (≥38 derajat celcius) atau riwayat demam atau gejala gangguan sistem pernapasan seperti pilek/sakit tenggorokan/batuk dan 14 hari terakhir sebelum timbul gejala memiliki riwayat perjalanan atau tingga diluar negeri yang melaporkan transmisi local di area transmisi lokal di Indonesia</p>
+                    <br>
+                    <br>
+                    <h2>PDP</h2>
+                    <p>PDP adalah singkatan dari Pasien Dalam Pengawasan. Seseorang dengan demam (≥38 derajat celcius), disertai salah satu gejala/tanda penyakit pernapasan seperti batuk/ sesak nafas/ sakit ternggorkan/ pilek/ pneumonia ringan hingga berat dan 14 hari terakhri sebelum timbul gejala memeiliki riwayat:
+                    <br> 
+                    1. Perjalanan atau tinggal di luar negeri yang melaporkan transmisilocal atau di area transmisi lokal di Indonesia atau<br>
+                    2. Kontak dengan kasus konfirmasi atau probabel COVID-19.    
+                    </p>
                 </div>
             </div>
         </div>
