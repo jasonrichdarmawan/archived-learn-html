@@ -267,7 +267,7 @@ header {
 }
 .footer-logo {
     color: #0e2d31;
-    font-size: 60px;
+    font-size: 40px;
     float: right;
     padding-right: 100px;
 }
@@ -389,11 +389,14 @@ header {
         padding-right: 60px;
         padding-left: 20px;
         cursor: pointer;
-        float : none;
+        float: none;
     }
     .call-center {
-        padding-right : 40px;
-        padding-top : 0;
+        padding-right: 40px;
+        padding-top: 0;
+    }
+    .top-wrapper h2 {
+        font-size: 40px;
     }
 }
 
@@ -402,14 +405,29 @@ header {
     .header-menu {
         display: none;
     }
-  
     .menu-icon {
         display: block;
     }
-    .call-center {
-        font-size: 18px;
+    .footer-logo {
+        padding-right: 0;
+        float: none;
+        text-align: center;
     }
-   
+    .footer-list li{
+        font-size: 18px;
+        list-style: none;
+        padding-top: 20px;
+        padding-right: 60px;
+        padding-left: 20px;
+        cursor: pointer;
+        float : none;
+    }
+    .call-center{
+        font-size: 18px;
+        padding-right : 0;
+        padding-top : 0;
+        text-align: center;
+    }
 }
 
 @media all and (min-width: 671px) {
