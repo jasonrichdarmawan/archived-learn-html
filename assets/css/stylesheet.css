@@ -1,0 +1,83 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+  background-color:#f7fff7;
+}
+.top-wrapper {
+    background-color:#f7fff7;
+    text-align: left;
+    padding: 100px 80px 50px 80px;
+    max-width: 100%;
+    display: block;
+    overflow: auto;
+}
+.top-wrapper-left {
+    float: left;
+    color: #1da79d;
+    width: 70%;
+}
+.top-wrapper-right {
+    float: right;
+    width: 25%;
+}
+.top-wrapper-left h2 {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.top-wrapper-left p {
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+.top-wrapper-left h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+.top-wrapper-left span {
+    color: #ff6b6b;
+}
+.virus {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+.btn {
+    font-size: 20px;
+    font-weight: 500;
+    color: #03254c;
+    padding: 17px 55px;
+    font-weight: bolder;
+    display: inline-block;
+    text-align: center; 
+    opacity: 0.8;
+    border-radius: 8px;
+    background-color: #f8e008;
+    transition: all 0.3s;
+    border-radius: 15px;
+    box-shadow: 0 9px #999999;
+}
+.btn span {
+    color: #03254c;
+}
+.btn span:after {
+    content: '\00bb';
+    opacity: 0;
+    transition: 0.5s;
+}
+.btn:hover span:after {
+    opacity: 1;
+}
+.btn:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    background-color: #b8a500;
+}
