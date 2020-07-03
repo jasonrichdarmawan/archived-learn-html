@@ -1,0 +1,39 @@
+@media all and (max-width: 1000px) {
+    .top-wrapper h2{
+      font-size: 35px;
+    }
+    .top-wrapper-right {
+        width: 50%;
+    }
+    .top-wrapper-left {
+        width: 50%;
+    }
+
+  }
+@media all and (max-width: 670px) {
+    .top-wrapper-right {
+        width: auto;
+    }
+    .top-wrapper-left {
+        width: 100%;
+    }
+    .top-wrapper h2 {
+        font-size: 25px;
+        line-height: 36px;
+        text-align: left;
+      }
+      .top-wrapper p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+      .top-wrapper-left p {
+        display: none;
+      }
+      .top-wrapper h3 {
+          font-size: 15px;
+          line-height: 20px;
+      }
+      .btn {
+        width: 40%;
+  }
+} 

@@ -92,10 +92,6 @@ header {
     background-color: #0e2d31;
 }
 
-#top-wrapper {
-    padding-top: 65px;
-}
-
 .button {
     border: none;
     color: white;
@@ -267,7 +263,7 @@ header {
 .footer {
     background-color: #FFE66D;
     background-size: cover;
-    padding :30px 40px;
+    padding: 30px 40px;
 }
 .footer-logo {
     color: #0e2d31;
@@ -278,7 +274,7 @@ header {
 
 .footer-list {
     color: #1a535c;
-    font-size: 25px;
+    font-size: 20px;
 }
 .footer-list li{
     list-style: none;
@@ -373,6 +369,10 @@ header {
 
     .flex-container > div {
         border-bottom: none;
+    }
+
+    .image-color {
+        margin-left: 30px;
     }
 }
 
