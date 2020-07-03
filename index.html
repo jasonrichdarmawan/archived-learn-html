@@ -33,8 +33,8 @@
                 </div>
                 <div class="header-menu">
                     <a href="#beranda">Beranda</a>
-                    <a href="#gejala">Gejala</a>
-                    <a href="#cegah">Pencegahan</a>
+                    <a href="#gejala" onclick="panelMaxHeight(2)">Gejala</a>
+                    <a href="#cegah" onclick="panelMaxHeight(1)">Pencegahan</a>
                     <a href="#jenis-pasien">Jenis Pasien</a>
                 </div>
                 <a href="javascript:void(0);" onclick="mobileMenuFunction()">
@@ -42,8 +42,8 @@
                 </a>
                 <div id="mobile-menu" onclick="hideMenuFunction()">
                     <a href="#beranda">Beranda</a>
-                    <a href="#gejala">Gejala</a>
-                    <a href="#cegah">Pencegahan</a>
+                    <a href="#gejala" onclick="panelMaxHeight(2)">Gejala</a>
+                    <a href="#cegah" onclick="panelMaxHeight(1)">Pencegahan</a>
                     <a href="#jenis-pasien">Jenis Pasien</a>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                     <h3>Waspada? Harus.<br>Panik? Jangan.</h3>
                     <h3>Kurangi rasa khawatirmu dan ikutlah berpartisipasi untuk mengurangi penyebaran virus dengan mencari tahu lebih dalam tentang Coronavirus (COVID-19)</h3> 
                  <div class="btn-wrapper">
-                    <a href="#gejala" class="btn start">Kenali Gejala Virus Corona</a>
+                    <a href="#gejala" class="btn start" onclick="panelMaxHeight(2)">Kenali Gejala Virus Corona</a>
                  </div>
                 </div> 
                 <div class="top-wrapper-right">
@@ -85,7 +85,7 @@
                 <button class="accordion">
                     <h1 id="cegah" class="center">Cara Cegah Penyebaran Virus Corona</h1>
                 </button>
-                <div class="panel">
+                <div class="panel" id="1">
                     <ul class="ul hoverable">
                         <!-- bug :last-child -->
                         <a href="#gejala"><li style="border-bottom: 1px solid #ddd;">Jangan panik, kenali gejalanya untuk deteksi virus corona sejak dini</li></a>
@@ -94,7 +94,7 @@
                     </ul>
                 </div>
 
-                <button class="accordion">
+                <button class="accordion" id="2">
                     <h1 id="gejala" class="center">Kenali Gejala Virus Corona</h1>
                 </button>
                 <div class="panel">
@@ -190,8 +190,8 @@
             <div class="footer-container">
                 <ul>
                     <li href="#beranda" class="left"> Beranda </li>
-                    <li href="#gejala" class="left"> Gejala </li>
-                    <li href="#cegah" class="left"> Pencegahan </li>
+                    <li href="#gejala" class="left" onclick="panelMaxHeight(2)"> Gejala </li>
+                    <li href="#cegah" class="left" onclick="panelMaxHeight(1)"> Pencegahan </li>
                     <li href="#jenis-pasien" class="left"> Jenis Pasien </li>
                 </ul>
             </div>
