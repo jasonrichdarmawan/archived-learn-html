@@ -92,9 +92,6 @@ header {
     background-color: #0e2d31;
 }
 
-#top-wrapper {
-    padding-top: 65px;
-}
 
 .button {
     border: none;
@@ -139,8 +136,8 @@ header {
 }
 
 .main2 {
-    border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
 }.main2 .container {
     padding-bottom: 16px;
     border-bottom: 1px solid #ddd;
