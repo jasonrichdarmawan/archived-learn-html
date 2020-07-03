@@ -286,6 +286,9 @@ header {
 .left {
     float : left;
 }
+.left a {
+    color: #0e2d31;
+}
 .call-center{
     text-align: right;
     font-size: 22px;
