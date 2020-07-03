@@ -227,7 +227,7 @@ header {
 
 .image-color{
     background: linear-gradient(#4ECDC4, #1A535C);
-    margin-left: 30px;
+  
     border-radius: 10px;
     margin-top: 30px;
 }.image-color img {
@@ -286,15 +286,9 @@ header {
     padding-left: 20px;
     cursor: pointer;
 }
-.Beranda {
-    float: left;
 
-}
-.Gejala {
-    float: left;
-}
-.Pencegahan {
-    float: left;
+.left {
+    float : left;
 }
 .call-center{
     text-align: right;
@@ -319,12 +313,8 @@ header {
     padding-left: 10px;
     margin-left: 10px;
 }
-.flex-container {
-    display: flex;
-    flex-direction : column;
-    padding-top: 30px;
-}
-.flex-container {
+
+.footer-container {
     display: flex;
     flex-direction : column;
     flex-wrap: wrap;
