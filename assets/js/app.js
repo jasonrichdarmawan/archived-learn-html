@@ -18,7 +18,6 @@ for (i = 0; i < acc.length; i++) {
 function panelMaxHeight(id) {
   var parent = document.getElementById(`${id}`);
   var panel = parent.nextElementSibling;
-  console.log(panel.style.maxHeight)
   if (panel.style.maxHeight == 0) {
     parent.classList.toggle("active");
     panel.style.maxHeight = panel.scrollHeight + "px";
